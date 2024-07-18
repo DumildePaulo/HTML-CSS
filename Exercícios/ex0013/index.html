@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p> Tente abrir esse site em vários dispositivos diferentes  ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.jpg" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.jpg" type="image/png">
+        <img src="imagens/foto-g.jpg" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/World War Outerspace - Audio Hertz (1).mp3" type="audio/anpeg">
+        <source src="midia/World War Outerspace - Audio Hertz (1).mp3" type="audio/ogg">
+        <source src="midia/World War Outerspace - Audio Hertz (1).mp3" type="audio/wav">
+        <p>infelizmente teu navegador não consegue reproduzir áudio.  <a href="midia/World War Outerspace - Audio Hertz (1).mp3">Clique aqui para baixar o arquivo MP3</a> </p>
+    </audio>
+</audio>
+</body>
+</html>
