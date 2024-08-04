@@ -10,29 +10,78 @@
         }
         table{
             width: 300px;
-            height: 100px;
+            height: 300px;
             border-collapse: collapse;
         }
-        td{
+        td,th{
             text-align: center;
             border: 1px solid black;
+        }
+        th,tfoot{
+            background-color: darkgrey;
         }
     </style>
 </head>
 <body>
     <table>
+    
         <thead>
             <tr>
-                <td>Área</td>
-                <td>Disciplinas</td>
-                <td>Notas</td>
+                <th>Área</th>
+                <th>Disciplinas</th>
+                <th>Notas</th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>notas</td>
-            </tr>
-        </thead>
+            </thead>  
+           
+            
+            <tbody>
+                <tr>
+                 <td>Informática </td>
+                 <td>Programação</td>
+                 <td>15</td>
+                </tr>
+                <tr>
+                    <td>Enfermagem</td>
+                    <td>L.portuguesa</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>    <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Económia</td>
+                    <td>Inglês</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Tot:</td>
+                    <td colspan="2">Media</td>
+                </tr>
+            </tfoot>
+       
     </table>
 </body>
 </html>
