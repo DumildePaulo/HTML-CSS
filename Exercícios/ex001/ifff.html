@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .menu {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .item {
+            min-width: 150px;
+            margin: 0 10px;
+            text-align: center;
+        }
+        .arrow {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="arrow left" onclick="scrollLeft()">&#9664;</button>
+        <div class="menu">
+            <div class="item">Investir</div>
+            <div class="item">Poupança</div>
+            <div class="item">Crédito Habitação</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+            <div class="item">Seguros</div>
+
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+        <button class="arrow right" onclick="scrollRight()">&#9654;</button>
+    </div>
+
+    <script>
+        function scrollLeft() {
+            document.querySelector('.menu').scrollBy({
+                left: -150,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            document.querySelector('.menu').scrollBy({
+                left: 150,
+                behavior: 'smooth'
+            });
+        }
+        function scroll(amount) {
+            document.querySelector('.menu').scrollBy({
+                left: amount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
